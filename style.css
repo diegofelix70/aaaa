@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #49ca5f;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 3rem 5%;
+}
+
+.content {
+  max-width: 580px;
+}
+
+header {
+  z-index: 1000;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navheader {
+  background-color: #ff6600;
+}
+header .navheader .contheader.active {
+  height: 6rem;
+  background-color: #49ca5f;
+  box-shadow: rgba(50, 50, 93, 0.048) 0px 2px 5px -1px, rgba(0, 0, 0, 0.151) 0px 1px 3px -1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navheader .contheader .linkheaderr {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+header .navheader .contheader .linkheaderr span {
+  font-weight: bolder;
+}
+
+.home {
+  background: #D9E9F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.home .box-container .content {
+  text-align: center;
+  flex: 1 1 42rem;
+}
+.home .box-container .content .video {
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+}
+.home .box-container .content .video iframe{
+  width: 100%;
+}
+.home .box-container .content h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+.home .box-container .content p {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0;
+  color: #000;
+}
+.home .box-container .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  background: #49ca5f;
+  color: #fff;
+  line-height: 1.2;
+  padding: 1rem 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.home .box-container .btn:hover {
+  border-color: #ff0000;
+  transform: translateY(-0.1rem);
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.why, .about {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.why{
+  padding-top: 2rem;
+}
+.why .box-container .content, .about .box-container .content {
+  text-align: left;
+  flex: 1 1 42rem;
+}
+.why .box-container .content img, .about .box-container .content img {
+  width: 100%;
+}
+.why .box-container .content h1, .about .box-container .content h1 {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  padding: 3rem 0 0.5rem 0;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+.why .box-container .content p, .about .box-container .content p {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0;
+  color: #000;
+}
+.why .box-container .content ul, .about .box-container .content ul {
+  list-style: none;
+  padding: 1rem 0;
+  list-style-position: inside;
+}
+.why .box-container .content ul li, .about .box-container .content ul li {
+  font-size: 1.8rem;
+  color: black;
+}
+.why .box-container .content ul li::before, .about .box-container .content ul li::before {
+  content: "✔  ";
+  color: rgb(202, 23, 23);
+}
+.why .box-container .btn, .about .box-container .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #49ca5f;
+  color: #fff;
+  line-height: 1.2;
+  padding: 1rem 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.why .box-container .btn:hover, .about .box-container .btn:hover {
+  border-color: #ff0000;
+  transform: translateY(-0.1rem);
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.about {
+  background: #D9E9F4;
+}
+
+.footer {
+  background: rgb(48, 47, 47);
+}
+.footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1.5rem;
+  color: #fff;
+}
+.footer .credit span {
+  color: #49ca5f;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  html .contact .row form .inputBox input {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
